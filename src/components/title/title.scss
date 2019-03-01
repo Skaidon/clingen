@@ -1,0 +1,33 @@
+.title-box {
+  padding: 0 1%;
+  position: relative;
+  text-align: left;
+  > button {
+    border: 1px solid #1b75bc;
+    background-color: #1b75bc;
+    border-radius: 2px;
+    box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    color: #fff;
+    cursor: pointer;
+    float: right;
+    font-size: 14px;
+    line-height: 1.42857;
+    outline: none;
+    padding: 6px 12px;
+    transition: border 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    white-space: nowrap;
+    &:hover {
+      border-color: #293894;
+      background-color: #293894;
+    }
+  }
+  > h1 {
+    font-size: 1.5rem;
+    margin: 5px 0 2px;
+  }
+  > h2 {
+    font-size: 1.1rem;
+    font-weight: 300;
+    line-height: 1.2;
+  }
+}

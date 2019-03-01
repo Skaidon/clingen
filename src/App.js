@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Wrapper, Tab, TabList, TabPanel } from "react-aria-tabpanel";
+import { DataTitleBox } from "./components/title/title";
 import "./App.scss";
 import "./scss/tabs.scss";
 
@@ -39,6 +40,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        <DataTitleBox />
         <Wrapper letterNavigation={true}>
           <TabList>
             <ul className="FancyTabs-tablist">

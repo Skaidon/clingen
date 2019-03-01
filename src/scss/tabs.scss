@@ -6,8 +6,10 @@
 
     &Item {
       display: inline-block;
-      + .FancyTabs-tablistItem {
-        margin-left: 0.3em;
+      @media screen and (min-width: 750px) {
+        + .FancyTabs-tablistItem {
+          margin-left: 0.3em;
+        }
       }
     }
   }
@@ -30,44 +32,67 @@
       border-bottom: 0;
       position: relative;
       padding: 15px 20px;
-      background: #ccc;
+      background: #f1f1f1;
       position: relative;
       transition: transform 0.2s ease-out, background 0.2s linear;
       -webkit-transition: -webkit-transform 0.2s ease-out,
         background 0.2s linear;
-      transform: translateY(10px);
-      -webkit-transform: translateY(10px);
+      @media screen and (min-width: 750px) {
+        transform: translateY(5px);
+        -webkit-transform: translateY(5px);
+      }
       &.is-active {
         background: #2697d1;
         border-color: #41d0cb;
         border-width: 1px;
         color: #fff;
         text-decoration: none;
-        transform: translateY(0);
-        -webkit-transform: translateY(0);
-        &::after {
-          content: "";
-          background: #fff;
-          height: 1px;
-          position: absolute;
-          bottom: -1px;
-          left: 0;
-          right: 0;
+        @media screen and (min-width: 750px) {
+          transform: translateY(0);
+          -webkit-transform: translateY(0);
+          &::after {
+            content: "";
+            background: #fff;
+            height: 1px;
+            position: absolute;
+            bottom: -1px;
+            left: 0;
+            right: 0;
+          }
         }
       }
     }
   }
-  &-panelInner {
-    transition: transform 0.3s ease;
-    &.is-enter {
-      transform: translateY(-120%);
+  @media screen and (min-width: 750px) {
+    &-panelInner {
+      transition: transform 0.3s ease;
+      &.is-enter {
+        transform: translateY(-120%);
+      }
+      &.is-enter-active,
+      &.is-leave {
+        transform: translateY(0);
+      }
+      &.is-leave-active {
+        transform: translateY(120%);
+      }
     }
-    &.is-enter-active,
-    &.is-leave {
-      transform: translateY(0);
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .FancyTabs- {
+    &tablist {
+      margin: 0 auto;
+      width: 70%;
+      &Item {
+        display: block;
+      }
     }
-    &.is-leave-active {
-      transform: translateY(120%);
+    &tab {
+      &Inner {
+        padding: 1.5% 1%;
+      }
     }
   }
 }
