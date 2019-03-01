@@ -1,13 +1,13 @@
 {
-  "main.css": "/stanford/static/css/main.975c9ae2.chunk.css",
-  "main.js": "/stanford/static/js/main.91aef14c.chunk.js",
-  "main.js.map": "/stanford/static/js/main.91aef14c.chunk.js.map",
+  "main.css": "/stanford/static/css/main.e371a9c3.chunk.css",
+  "main.js": "/stanford/static/js/main.4787f657.chunk.js",
+  "main.js.map": "/stanford/static/js/main.4787f657.chunk.js.map",
   "runtime~main.js": "/stanford/static/js/runtime~main.b754af33.js",
   "runtime~main.js.map": "/stanford/static/js/runtime~main.b754af33.js.map",
-  "static/js/2.cfb487fa.chunk.js": "/stanford/static/js/2.cfb487fa.chunk.js",
-  "static/js/2.cfb487fa.chunk.js.map": "/stanford/static/js/2.cfb487fa.chunk.js.map",
+  "static/js/2.69c3489a.chunk.js": "/stanford/static/js/2.69c3489a.chunk.js",
+  "static/js/2.69c3489a.chunk.js.map": "/stanford/static/js/2.69c3489a.chunk.js.map",
   "index.html": "/stanford/index.html",
-  "precache-manifest.7a2f1317083fcdca580409d30383c8f6.js": "/stanford/precache-manifest.7a2f1317083fcdca580409d30383c8f6.js",
+  "precache-manifest.31b18664bdd6f61e10b1506b9252b4d9.js": "/stanford/precache-manifest.31b18664bdd6f61e10b1506b9252b4d9.js",
   "service-worker.js": "/stanford/service-worker.js",
-  "static/css/main.975c9ae2.chunk.css.map": "/stanford/static/css/main.975c9ae2.chunk.css.map"
+  "static/css/main.e371a9c3.chunk.css.map": "/stanford/static/css/main.e371a9c3.chunk.css.map"
 }
