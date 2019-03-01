@@ -1,0 +1,15 @@
+.grid-item,
+dd {
+  margin: 0;
+  text-align: left;
+}
+
+.grid {
+  &-container {
+    margin: 1%;
+  }
+  &-item {
+    background-color: #d7ecd7;
+    padding: 2%;
+  }
+}

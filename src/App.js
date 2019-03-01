@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Wrapper, Tab, TabList, TabPanel } from "react-aria-tabpanel";
 import { DataTitleBox } from "./components/title/title";
+import CurationData from "./components/curation-data/curationData";
 import "./App.scss";
 import "./scss/tabs.scss";
 
@@ -41,6 +42,7 @@ class App extends Component {
     return (
       <div className="App">
         <DataTitleBox />
+        <CurationData />
         <Wrapper letterNavigation={true}>
           <TabList>
             <ul className="FancyTabs-tablist">
