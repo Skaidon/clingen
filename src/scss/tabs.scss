@@ -1,0 +1,73 @@
+.FancyTabs {
+  &-tablist {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    &Item {
+      display: inline-block;
+      + .FancyTabs-tablistItem {
+        margin-left: 0.3em;
+      }
+    }
+  }
+  &-panel {
+    border-top: 5px solid #2697d1;
+    padding: 1em;
+    position: relative;
+    z-index: 2;
+    background: #fff;
+    overflow: hidden;
+  }
+
+  &-tab {
+    cursor: pointer;
+    &:focus {
+      outline: 0;
+    }
+    &Inner {
+      border: 1px solid transparent;
+      border-bottom: 0;
+      position: relative;
+      padding: 15px 20px;
+      background: #ccc;
+      position: relative;
+      transition: transform 0.2s ease-out, background 0.2s linear;
+      -webkit-transition: -webkit-transform 0.2s ease-out,
+        background 0.2s linear;
+      transform: translateY(10px);
+      -webkit-transform: translateY(10px);
+      &.is-active {
+        background: #2697d1;
+        border-color: #41d0cb;
+        border-width: 1px;
+        color: #fff;
+        text-decoration: none;
+        transform: translateY(0);
+        -webkit-transform: translateY(0);
+        &::after {
+          content: "";
+          background: #fff;
+          height: 1px;
+          position: absolute;
+          bottom: -1px;
+          left: 0;
+          right: 0;
+        }
+      }
+    }
+  }
+  &-panelInner {
+    transition: transform 0.3s ease;
+    &.is-enter {
+      transform: translateY(-120%);
+    }
+    &.is-enter-active,
+    &.is-leave {
+      transform: translateY(0);
+    }
+    &.is-leave-active {
+      transform: translateY(120%);
+    }
+  }
+}
