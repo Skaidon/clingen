@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "4f6eb6a91919088fb7dc",
-    "url": "/stanford/static/css/main.435b4d45.chunk.css"
+    "revision": "91aef14c54430caaf130",
+    "url": "/stanford/static/css/main.975c9ae2.chunk.css"
   },
   {
-    "revision": "4f6eb6a91919088fb7dc",
-    "url": "/stanford/static/js/main.4f6eb6a9.chunk.js"
+    "revision": "91aef14c54430caaf130",
+    "url": "/stanford/static/js/main.91aef14c.chunk.js"
   },
   {
     "revision": "b754af336c9e4f99742c",
@@ -16,7 +16,7 @@ self.__precacheManifest = [
     "url": "/stanford/static/js/2.cfb487fa.chunk.js"
   },
   {
-    "revision": "2b5baf941cdccda7960a979ce52f2ed1",
+    "revision": "e87da76c59b438bd516535736919e8e1",
     "url": "/stanford/index.html"
   }
 ];
