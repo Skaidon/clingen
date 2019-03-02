@@ -7,7 +7,7 @@ import "./curationData.scss";
 
 export default function CurationData() {
   const gridSpacer = "1%";
-  const gridWidth = "30%";
+  const gridWidth = "32%";
   return (
     <Grid width={gridWidth} gap={gridSpacer} className="grid-container">
       <div className="grid-item">
@@ -20,7 +20,10 @@ export default function CurationData() {
             </a>
           </dd>
           <dd>
-            dbSNP ID: <a href="#test">rs61756147 <FontAwesomeIcon icon={faExternalLinkAlt} /></a>
+            dbSNP ID:{" "}
+            <a href="#test">
+              rs61756147 <FontAwesomeIcon icon={faExternalLinkAlt} />
+            </a>
           </dd>
         </dl>
       </div>
@@ -83,10 +86,18 @@ export default function CurationData() {
       <div className="grid-item">
         <h4>My Interpretation</h4>
         <dl>
-          <dd><strong>Disease:</strong> Not provided</dd>
-          <dd><strong>Calculated Pathogenicity:</strong> None</dd>
-          <dd><strong>Modified Pathogenicity:</strong> Not provided</dd>
-          <dd><strong>Provisional/Approved Status:</strong> None</dd>
+          <dd>
+            <strong>Disease:</strong> Not provided
+          </dd>
+          <dd>
+            <strong>Calculated Pathogenicity:</strong> None
+          </dd>
+          <dd>
+            <strong>Modified Pathogenicity:</strong> Not provided
+          </dd>
+          <dd>
+            <strong>Provisional/Approved Status:</strong> None
+          </dd>
         </dl>
       </div>
     </Grid>
