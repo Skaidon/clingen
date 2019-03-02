@@ -24,10 +24,36 @@
   > h1 {
     font-size: 1.5rem;
     margin: 5px 0 2px;
+    > .fa-info-circle {
+      color: #31708f;
+      font-size: 15px;
+    }
   }
   > h2 {
     font-size: 1.1rem;
     font-weight: 300;
     line-height: 1.2;
+  }
+}
+
+.ra-tooltip {
+  background: rgba(0,0,0,0.8);
+  width: 400px;
+  z-index: 9000;
+  &.bottom {
+    transform: translate(-50%,102%);
+  }
+  &-message {
+    font-size: 13px;
+    font-weight: 100;
+    > p {
+      white-space: initial;
+    }
+  }
+  &-wrapper {
+    .fa-info-circle {
+      color: #31708f;
+      cursor: pointer;
+    }
   }
 }

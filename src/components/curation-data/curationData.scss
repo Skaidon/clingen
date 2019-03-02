@@ -11,5 +11,19 @@ dd {
   &-item {
     background-color: #d7ecd7;
     padding: 2%;
+
+    h4 {
+      border-bottom: 1px solid #c9c9c9;
+      font-size: 1.25rem;
+      font-weight: 500;
+      line-height: 1.1;
+      margin-bottom: 10px;
+      margin-top: 0;
+      padding-bottom: 5px;
+    }
+
+    dl {
+      margin: 0;
+    }
   }
 }
