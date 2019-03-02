@@ -1,4 +1,7 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Purpose
+
+- Play with newer React concepts like Hooks.
+- Play with various UI React components.
 
 ## Available Scripts
 
