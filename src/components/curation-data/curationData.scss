@@ -10,7 +10,7 @@ dd {
   &-container {
     margin: 1%;
     @media screen and (max-width: $sm-break) {
-      display: block;
+      display: block !important;
       margin: 0 auto;
       width: 80%;
     }
