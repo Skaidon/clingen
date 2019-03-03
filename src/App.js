@@ -2,8 +2,10 @@ import React, { Component } from "react";
 import { Wrapper, Tab, TabList, TabPanel } from "react-aria-tabpanel";
 import variantTitleBox from "./contexts/titleBox";
 import curationDataContext from "./contexts/curationData";
+import curationCriteria from "./contexts/curationCriteria";
 import { DataTitleBox } from "./components/title/title";
 import CurationData from "./components/curation-data/curationData";
+import CurationCriteriaButtons from "./components/curation-criteria/curationCriteria";
 import "./App.scss";
 import "./scss/tabs.scss";
 
@@ -51,12 +53,14 @@ class App extends Component {
         value={{
           variantTitleBox,
           curationDataContext,
+          curationCriteria,
           tabs: ["Basic Information"]
         }}
       >
         <div className="App">
           <DataTitleBox />
           <CurationData />
+          <CurationCriteriaButtons />
           <Wrapper letterNavigation={true}>
             <TabList>
               <ul className="FancyTabs-tablist">

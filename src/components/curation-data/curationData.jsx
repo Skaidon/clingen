@@ -32,7 +32,7 @@ export default function CurationData() {
     <Context>
       {({ curationDataContext }) => (
         <Grid width={gridWidth} gap={gridSpacer} className="grid-container">
-          <div className="grid-item">
+          <div className="grid-item greenBg">
             <h4>{curationDataContext.sourcesTitle}</h4>
             <dl>
               {curationDataContext.sources.map((source, i) => {
@@ -52,7 +52,7 @@ export default function CurationData() {
               })}
             </dl>
           </div>
-          <div className="grid-item">
+          <div className="grid-item greenBg">
             <h4>{curationDataContext.genomicTitle}</h4>
             <dl>
               {curationDataContext.genomicContext.map((genomes, i) => {
@@ -64,7 +64,7 @@ export default function CurationData() {
               })}
             </dl>
           </div>
-          <div className="grid-item">
+          <div className="grid-item greenBg">
             <h4>{curationDataContext.interpretations.title}</h4>
             <dl>
               {curationDataContext.interpretations.content.map((content, i) => {
