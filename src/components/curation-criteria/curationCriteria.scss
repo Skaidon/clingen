@@ -37,24 +37,25 @@
   }
 
   // Button colors:
+  $buttons: benign-supporting #2b67a0, pathogenic-moderate #d36735,
+    pathogenic-strong #d33535, pathogenic-supporting #728b42,
+    pathogenic-very-strong #d33535, stand-alone #62387e;
+
   button {
-    &.benign-supporting {
-      color: #2b67a0;
+    @each $button in $buttons {
+      $key: nth($button, 1);
+      $value: nth($button, 2);
+
+      &.#{$key} {
+        color: $value;
+      }
     }
-    &.pathogenic-moderate {
-      color: #d36735;
-    }
-    &.pathogenic-strong {
-      color: #d33535;
-    }
-    &.pathogenic-supporting {
-      color: #728b42;
-    }
-    &.pathogenic-very-strong {
-      color: #d33535;
-    }
-    &.stand-alone {
-      color: #62387e;
+  }
+
+  @media screen and (max-width: 1140px) {
+    display: block;
+    button {
+      margin-bottom: 3px;
     }
   }
 }
