@@ -68,11 +68,9 @@ class App extends Component {
                   <Tab id="t1" className="FancyTabs-tab">
                     {demoTab.bind(
                       null,
-                      <div>
-                        <span className="FancyTabs-tabText">
-                          Basic Information
-                        </span>
-                      </div>
+                      <span className="FancyTabs-tabText">
+                        Basic Information
+                      </span>
                     )}
                   </Tab>
                 </li>
@@ -80,9 +78,7 @@ class App extends Component {
                   <Tab id="t2" className="FancyTabs-tab">
                     {demoTab.bind(
                       null,
-                      <div>
-                        <span className="FancyTabs-tabText">Population</span>
-                      </div>
+                      <span className="FancyTabs-tabText">Population</span>
                     )}
                   </Tab>
                 </li>
@@ -90,9 +86,7 @@ class App extends Component {
                   <Tab id="t3" className="FancyTabs-tab">
                     {demoTab.bind(
                       null,
-                      <div>
-                        <span className="FancyTabs-tabText">Variant Type</span>
-                      </div>
+                      <span className="FancyTabs-tabText">Variant Type</span>
                     )}
                   </Tab>
                 </li>
@@ -100,11 +94,9 @@ class App extends Component {
                   <Tab id="t4" className="FancyTabs-tab">
                     {demoTab.bind(
                       null,
-                      <div>
-                        <span className="FancyTabs-tabText">
-                          Case/Segregation
-                        </span>
-                      </div>
+                      <span className="FancyTabs-tabText">
+                        Case/Segregation
+                      </span>
                     )}
                   </Tab>
                 </li>
@@ -112,9 +104,7 @@ class App extends Component {
                   <Tab id="t5" className="FancyTabs-tab">
                     {demoTab.bind(
                       null,
-                      <div>
-                        <span className="FancyTabs-tabText">Gene-centric</span>
-                      </div>
+                      <span className="FancyTabs-tabText">Gene-centric</span>
                     )}
                   </Tab>
                 </li>

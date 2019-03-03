@@ -1,3 +1,5 @@
+$sm-break: 760px;
+
 .grid-item,
 dd {
   margin: 0;
@@ -7,11 +9,19 @@ dd {
 .grid {
   &-container {
     margin: 1%;
+    @media screen and (max-width: $sm-break) {
+      display: block;
+      margin: 0 auto;
+      width: 80%;
+    }
   }
   &-item {
     &.greenBg {
       background-color: #d7ecd7;
       padding: 2%;
+      @media screen and (max-width: $sm-break) {
+        margin-bottom: 3px;
+      }
     }
 
     h4 {
