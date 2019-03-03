@@ -3,9 +3,11 @@ import { Wrapper, Tab, TabList, TabPanel } from "react-aria-tabpanel";
 import variantTitleBox from "./contexts/titleBox";
 import curationDataContext from "./contexts/curationData";
 import curationCriteria from "./contexts/curationCriteria";
+import basicinfoCriteria from "./contexts/basicInfo";
 import { DataTitleBox } from "./components/title/title";
 import CurationData from "./components/curation-data/curationData";
 import CurationCriteriaButtons from "./components/curation-criteria/curationCriteria";
+import BasicInfoTab from "./components/tabs/basic-information/basicInfo";
 import "./App.scss";
 import "./scss/tabs.scss";
 
@@ -54,6 +56,7 @@ class App extends Component {
           variantTitleBox,
           curationDataContext,
           curationCriteria,
+          basicinfoCriteria,
           tabs: ["Basic Information"]
         }}
       >
@@ -113,8 +116,7 @@ class App extends Component {
             <div className="FancyTabs-panel">
               <TabPanel tabId="t1">
                 <div className="FancyTabs-panelInner">
-                  Lorem dolor sit amet, consectetur adipisicing elit, sed do
-                  eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  <BasicInfoTab />
                 </div>
               </TabPanel>
               <TabPanel tabId="t2">

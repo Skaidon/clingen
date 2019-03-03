@@ -1,0 +1,89 @@
+.callout {
+  background: #fff;
+  border: 1px solid #eee;
+  border-left-width: 5px;
+  border-radius: 3px;
+  margin: 0 0 20px 0;
+  padding: 20px;
+}
+
+.genomic {
+  border-left: 3px solid #1b809e;
+  text-align: left;
+  > h4 {
+    color: #1b809e;
+    font-size: 1.25rem;
+    margin-top: 0;
+    margin-bottom: 5px;
+  }
+  > ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  li {
+    > span {
+      display: inline-block;
+      max-width: 89%;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      vertical-align: bottom;
+      white-space: nowrap;
+    }
+  }
+}
+
+.panel {
+  background-color: #fff;
+  border: 1px solid transparent;
+  border-radius: 2px;
+  &-heading {
+    border-bottom: 1px solid transparent;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    padding: 10px 15px;
+    text-align: left;
+  }
+  &-info {
+    border-color: #bce8f1;
+    > .panel-heading {
+      color: #31708f;
+      background-color: #d9edf7;
+      border-color: #bce8f1;
+    }
+  }
+  .panel-title {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 16px;
+    color: inherit;
+  }
+}
+
+.table {
+  width: 100%;
+  max-width: 100%;
+  td {
+    border-top: 1px solid #ddd;
+    line-height: 1.42857;
+    padding: 8px;
+    vertical-align: top;
+    width: 20%;
+  }
+  td,
+  th {
+    text-align: left;
+  }
+  th {
+    padding: 8px;
+    line-height: 1.42857;
+  }
+}
+
+.all-existing-interpretaions {
+  th {
+    border-top: 0;
+    vertical-align: bottom;
+    width: 20%;
+  }
+}
