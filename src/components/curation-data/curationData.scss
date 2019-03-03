@@ -25,5 +25,18 @@ dd {
     dl {
       margin: 0;
     }
+
+    dd {
+      .link {
+        display: inline-block;
+        &:first-child {
+          &::after {
+            content: "|";
+            display: inline-block;
+            margin: 0 4px;
+          }
+        }
+      }
+    }
   }
 }
