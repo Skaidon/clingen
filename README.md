@@ -11,6 +11,10 @@
   - `react-css-grid` for the multi column layouts.
     - Chosen because I haven't had an opportunity to use CSS Grid yet.
 
+## Inspiration:
+
+![Screenshot taken from tool](media/clingen_base_page.png)
+
 ## Available Scripts
 
 In the project directory, you can run:
