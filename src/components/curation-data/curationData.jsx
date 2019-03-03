@@ -14,14 +14,14 @@ export default function CurationData() {
   const getLinks = links => {
     return links.map((link, i) => {
       return (
-        <span class="link" key={i}>
+        <span className="link" key={i}>
           <a
             href={link.url}
             title={link.title}
             target="_blank"
             rel="noopener noreferrer"
           >
-            {link.copy}
+            {link.copy}&nbsp;
             <FontAwesomeIcon icon={faExternalLinkAlt} />
           </a>
         </span>
@@ -44,7 +44,8 @@ export default function CurationData() {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      {source.link} <FontAwesomeIcon icon={faExternalLinkAlt} />
+                      {source.link}&nbsp;
+                      <FontAwesomeIcon icon={faExternalLinkAlt} />
                     </a>
                   </dd>
                 );
