@@ -4,9 +4,11 @@ import variantTitleBox from "./contexts/titleBox";
 import curationDataContext from "./contexts/curationData";
 import curationCriteria from "./contexts/curationCriteria";
 import basicinfoCriteria from "./contexts/basicInfo";
+import progressBarCriteria from "./contexts/progressBar";
 import { DataTitleBox } from "./components/title/title";
 import CurationData from "./components/curation-data/curationData";
 import CurationCriteriaButtons from "./components/curation-criteria/curationCriteria";
+import ProgressBar from "./components/tabs/progress-bar/progressBar";
 import BasicInfoTab from "./components/tabs/basic-information/basicInfo";
 import "./App.scss";
 import "./scss/tabs.scss";
@@ -57,6 +59,7 @@ class App extends Component {
           curationDataContext,
           curationCriteria,
           basicinfoCriteria,
+          progressBarCriteria,
           tabs: ["Basic Information"]
         }}
       >
@@ -64,6 +67,7 @@ class App extends Component {
           <DataTitleBox />
           <CurationData />
           <CurationCriteriaButtons />
+          <ProgressBar />
           <Wrapper letterNavigation={true}>
             <TabList>
               <ul className="FancyTabs-tablist">
