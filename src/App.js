@@ -1,15 +1,20 @@
 import React, { Component } from "react";
 import { Wrapper, Tab, TabList, TabPanel } from "react-aria-tabpanel";
+// Contexts:
 import variantTitleBox from "./contexts/titleBox";
 import curationDataContext from "./contexts/curationData";
 import curationCriteria from "./contexts/curationCriteria";
 import basicinfoCriteria from "./contexts/basicInfo";
 import progressBarCriteria from "./contexts/progressBar";
+import populationTabCriteria from "./contexts/population";
+// Components:
 import { DataTitleBox } from "./components/title/title";
 import CurationData from "./components/curation-data/curationData";
 import CurationCriteriaButtons from "./components/curation-criteria/curationCriteria";
 import ProgressBar from "./components/tabs/progress-bar/progressBar";
 import BasicInfoTab from "./components/tabs/basic-information/basicInfo";
+import PopulationTab from "./components/tabs/population/population";
+// SASS:
 import "./App.scss";
 import "./scss/tabs.scss";
 
@@ -60,6 +65,7 @@ class App extends Component {
           curationCriteria,
           basicinfoCriteria,
           progressBarCriteria,
+          populationTabCriteria,
           tabs: ["Basic Information"]
         }}
       >
@@ -125,8 +131,7 @@ class App extends Component {
               </TabPanel>
               <TabPanel tabId="t2">
                 <div className="FancyTabs-panelInner">
-                  Ut ad minim veniam, quis nostrud exercitation ullamco laboris
-                  nisi ut aliquip ex ea commodo consequat.
+                  <PopulationTab />
                 </div>
               </TabPanel>
               <TabPanel tabId="t3">
