@@ -1,15 +1,15 @@
 {
-  "main.css": "/clingen/static/css/main.bf18450d.chunk.css",
-  "main.js": "/clingen/static/js/main.980a2a63.chunk.js",
-  "main.js.map": "/clingen/static/js/main.980a2a63.chunk.js.map",
+  "main.css": "/clingen/static/css/main.97e87273.chunk.css",
+  "main.js": "/clingen/static/js/main.54021a08.chunk.js",
+  "main.js.map": "/clingen/static/js/main.54021a08.chunk.js.map",
   "runtime~main.js": "/clingen/static/js/runtime~main.d356205d.js",
   "runtime~main.js.map": "/clingen/static/js/runtime~main.d356205d.js.map",
   "static/css/2.f1b177c0.chunk.css": "/clingen/static/css/2.f1b177c0.chunk.css",
-  "static/js/2.589d9c24.chunk.js": "/clingen/static/js/2.589d9c24.chunk.js",
-  "static/js/2.589d9c24.chunk.js.map": "/clingen/static/js/2.589d9c24.chunk.js.map",
+  "static/js/2.1684ea43.chunk.js": "/clingen/static/js/2.1684ea43.chunk.js",
+  "static/js/2.1684ea43.chunk.js.map": "/clingen/static/js/2.1684ea43.chunk.js.map",
   "index.html": "/clingen/index.html",
-  "precache-manifest.2fb5a8ed3071fddd8f7207d11167fc98.js": "/clingen/precache-manifest.2fb5a8ed3071fddd8f7207d11167fc98.js",
+  "precache-manifest.a4a925afe8e56b7a8a9cea1af5126dcd.js": "/clingen/precache-manifest.a4a925afe8e56b7a8a9cea1af5126dcd.js",
   "service-worker.js": "/clingen/service-worker.js",
   "static/css/2.f1b177c0.chunk.css.map": "/clingen/static/css/2.f1b177c0.chunk.css.map",
-  "static/css/main.bf18450d.chunk.css.map": "/clingen/static/css/main.bf18450d.chunk.css.map"
+  "static/css/main.97e87273.chunk.css.map": "/clingen/static/css/main.97e87273.chunk.css.map"
 }
