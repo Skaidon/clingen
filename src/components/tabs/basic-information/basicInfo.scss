@@ -23,12 +23,14 @@
   }
   li {
     > span {
-      display: inline-block;
-      max-width: 89%;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      vertical-align: bottom;
-      white-space: nowrap;
+      &:first-child {
+        display: inline-block;
+        max-width: 89%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        vertical-align: bottom;
+        white-space: nowrap;
+      }
     }
   }
 }

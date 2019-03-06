@@ -1,4 +1,7 @@
 import React from "react";
+import Popover from "react-awesome-popover";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faInfoCircle } from "@fortawesome/free-solid-svg-icons";
 import { Context } from "../../../App";
 
 import "./basicInfo.scss";
@@ -9,72 +12,80 @@ export default function BasicInfoTab() {
       {({ basicinfoCriteria }) => (
         <>
           <div className="callout genomic">
-            <h4>Genomic</h4>
+            <h4>{basicinfoCriteria.genomic}</h4>
             <ul>
-              <li>
-                <span className="title-ellipsis title-ellipsis-short">
-                  NC_000016.10:g.23636248G&gt;A
-                </span>
-                <span> (GRCh38)</span>
-              </li>
-              <li>
-                <span className="title-ellipsis title-ellipsis-short">
-                  NC_000016.9:g.23647569G&gt;A
-                </span>
-                <span> (GRCh37)</span>
-              </li>
+              {basicinfoCriteria.titles.map((title, i) => {
+                return (
+                  <li key={i}>
+                    <span>{title.title}</span>
+                    <span>({title.subtitle})</span>
+                  </li>
+                );
+              })}
             </ul>
           </div>
-          <div className="panel panel-info all-existing-interpretaions">
-            <div className="panel-heading">
-              <h3 className="panel-title">
-                All interpretations for this variant in the Variant Curation
-                Interface (VCI)
-                <span className="interpretation-status-explanation">
-                  <span
-                    className="text-info contextual-help"
-                    data-toggle="tooltip"
-                    data-placement="top"
-                    data-tooltip='Interpretations marked as "Approved" may be viewed by any user within the interface; those marked as "In progress" or "Provisional" are viewable only by the submitter.'
-                  >
-                    <i className="icon icon-info-circle" />
-                  </span>
-                </span>
-              </h3>
-            </div>
-            <div className="panel-content-wrapper">
-              <div className="all-existing-interpretaions-content-wrapper">
-                <table className="table">
-                  <thead>
-                    <tr>
-                      <th>Clinical significance</th>
-                      <th>Status</th>
-                      <th>
-                        Condition - <i>Mode of inheritance</i>
-                      </th>
-                      <th>Curator/Affiliation</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr className="approved-interpretation">
-                      <td className="clinical-significance">--</td>
-                      <td className="interpretation-status">
-                        <span className="no-classification">None</span>
-                      </td>
-                      <td className="condition-mode-of-inheritance">
-                        <span>Not provided</span>
-                      </td>
-                      <td className="submitter">
-                        <a href="mailto:clingen.demo.curator@genome.stanford.edu">
-                          ClinGen Test Curator
-                        </a>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
+
+          {basicinfoCriteria.panels.map((panel, i) => {
+            return (
+              <div
+                className="panel panel-info all-existing-interpretaions"
+                key={i}
+              >
+                <div className="panel-heading">
+                  <h3 className="panel-title">
+                    {panel.title}
+                    <Popover
+                      action="hover"
+                      placement="top"
+                      arrowFill="rgba(0, 0, 0, 0.8)"
+                    >
+                      <span>
+                        <FontAwesomeIcon icon={faInfoCircle} />
+                      </span>
+                      <div className="ra-tooltip">{panel.tooltip}</div>
+                    </Popover>
+                  </h3>
+                </div>
+                <div className="panel-content-wrapper" key={i}>
+                  <div className="all-existing-interpretaions-content-wrapper">
+                    <table className="table">
+                      <thead>
+                        <tr>
+                          {panel.table.headings.map((header, i) => {
+                            if (header.subtitle) {
+                              return (
+                                <th key={i}>
+                                  {header.title}
+                                  <em>{header.subtitle}</em>
+                                </th>
+                              );
+                            } else {
+                              return <th key={i}>{header.title}</th>;
+                            }
+                          })}
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr className="approved-interpretation">
+                          {panel.table.values.map((v, i) => {
+                            if (v.link) {
+                              return (
+                                <td key={i}>
+                                  <a href={v.link}>{v.value}</a>
+                                </td>
+                              );
+                            } else {
+                              return <td key={i}>{v.value}</td>;
+                            }
+                          })}
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
+            );
+          })}
         </>
       )}
     </Context>

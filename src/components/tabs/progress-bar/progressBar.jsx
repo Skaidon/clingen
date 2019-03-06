@@ -26,8 +26,7 @@ export default function ProgressBar() {
                 </div>
                 <div className="criteriaCopy">
                   {criteria.title}
-                  <br />
-                  <span className="criteriaValue">{criteria.copy}</span>
+                  <div className="criteriaValue">{criteria.copy}</div>
                 </div>
               </div>
             );

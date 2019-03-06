@@ -1,9 +1,55 @@
 export const basicinfoCriteria = {
-  title: "NM_024675.3(PALB2):c.298C>T (p.Leu100Phe)",
-  tooltip:
-    "For ClinVar alleles, this represents the ClinVar Preferred Title. For alleles not in ClinVar, this HGVS is based on the transcript with the longest translation with no stop codons or, if no translation, the longest non-protein-coding transcript. If a single canonical transcript is not discernible the HGVS is based on the GRCh38 genomic coordinates.",
-  subtitle:
-    "This interpretation is not yet associated with a disease or mode of inheritance"
+  genomic: "Genomic",
+  titles: [
+    {
+      title: "NC_000016.10:g.23636248G&gt;A",
+      subtitle: "GRCh38"
+    },
+    {
+      title: "NC_000016.9:g.23647569G&gt;A",
+      subtitle: "GRCh37"
+    }
+  ],
+  panels: [
+    {
+      title:
+        "All interpretations for this variant in the Variant Curation Interface(VCI)",
+      tooltip:
+        'Interpretations marked as "Approved" may be viewed by any user within the interface; those marked as "In progress" or "Provisional" are viewable only by the submitter.',
+      table: {
+        headings: [
+          {
+            title: "Clinical significance"
+          },
+          {
+            title: "Status"
+          },
+          {
+            title: "Condition - ",
+            subtitle: "Mode of inheritance"
+          },
+          {
+            title: "Curator/Affiliation"
+          }
+        ],
+        values: [
+          {
+            value: "--"
+          },
+          {
+            value: "None"
+          },
+          {
+            value: "Not provided"
+          },
+          {
+            value: "ClinGen Test Curator",
+            link: "mailto:clingen.demo.curator@genome.stanford.edu"
+          }
+        ]
+      }
+    }
+  ]
 };
 
 export default basicinfoCriteria;
