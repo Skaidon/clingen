@@ -2,11 +2,11 @@ export const basicinfoCriteria = {
   genomic: "Genomic",
   titles: [
     {
-      title: "NC_000016.10:g.23636248G&gt;A",
+      title: "NC_000016.10:g.23636248G>A",
       subtitle: "GRCh38"
     },
     {
-      title: "NC_000016.9:g.23647569G&gt;A",
+      title: "NC_000016.9:g.23647569G>A",
       subtitle: "GRCh37"
     }
   ],
