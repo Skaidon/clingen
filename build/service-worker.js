@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/clingen/precache-manifest.85aa10b56ddd21b81240af2f90c1d706.js"
+  "/clingen/precache-manifest.7cfaf2744924c421ad045859536287fd.js"
 );
 
 workbox.clientsClaim();

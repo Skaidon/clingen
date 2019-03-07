@@ -25,7 +25,7 @@ export default function ProgressBar() {
                   <FontAwesomeIcon icon={icon} color={criteria.iconColor} />
                 </div>
                 <div className="criteriaCopy">
-                  {criteria.title}
+                  <strong>{criteria.title}</strong>
                   <div className="criteriaValue">{criteria.copy}</div>
                 </div>
               </div>
