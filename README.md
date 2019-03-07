@@ -2,6 +2,7 @@
 
 - Play with newer React concepts like Context.
   - Hooks doesn't make sense for this experiment.
+  - Context is used throughout, regardless. For a production app, this would be handled differently through props or using something like Redux coupled with Context where appropriate.
 - Play with various UI React components that Ihaven't had a chance to utilize during my full-time job.
   - `react-aria-tabpanel` for the tabs.
     - Chosen for it's accessibility features.
