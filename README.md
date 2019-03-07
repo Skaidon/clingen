@@ -19,6 +19,24 @@
 
 ![Screenshot taken from tool](media/clingen_base_page.png)
 
+## Known Issues
+
+- Not all tabs have real content.
+  - I stopped when I ran out of new UI patterns to recreate.
+- No modals
+- No real functionality beyond displaying data.
+  - In the console log, I logged one API call and also added that to State. But it is never referenced due to me not knowing where the UI data actually resides.
+
+## Things I would Change/Iterate On
+
+- State management for the UI.
+  - Didn't put any in for this, would look at storing state of tabs selected, UIs expanded, etc...
+- More reusable components for repeated UI patterns.
+  - I just took a section by section approach. There are a few repeated patterns that could be extracted to reusable components rather than hardcoding the HTML for each instance.
+- UI Framework
+  - I didn't use a popular React UI framework for this as my intent was to get comfortable with latest React and not rely on one package to solve all the problems.
+  - For a production project, I would take more time looking at various frameworks to see if any would suit the needs of the app rather than pick packages for each individual feature like I've done here.
+
 ## Available Scripts
 
 In the project directory, you can run:
@@ -35,19 +53,3 @@ The React Devtools will open.
 ### `npm run start`
 
 Same as above, but without the React Devtools opening.
-
-## Known Issues
-
-- Not all tabs have real content.
-  - I stopped when I ran out of new UI patterns to recreate.
-- No modals
-
-## Things I would Change/Iterate On
-
-- State management for the UI.
-  - Didn't put any in for this, would look at storing state of tabs selected, UIs expanded, etc...
-- More reusable components for repeated UI patterns.
-  - I just took a section by section approach. There are a few repeated patterns that could be extracted to reusable components rather than hardcoding the HTML for each instance.
-- UI Framework
-  - I didn't use a popular React UI framework for this as my intent was to get comfortable with latest React and not rely on one package to solve all the problems.
-  - For a production project, I would take more time looking at various frameworks to see if any would suit the needs of the app rather than pick packages for each individual feature like I've done here.
