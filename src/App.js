@@ -79,7 +79,7 @@ class App extends Component {
               <ul className="FancyTabs-tablist">
                 <li className="FancyTabs-tablistItem">
                   <Tab id="t1" className="FancyTabs-tab">
-                    {demoTab.bind(
+                    {tabs.bind(
                       null,
                       <span className="FancyTabs-tabText">
                         Basic Information
@@ -89,7 +89,7 @@ class App extends Component {
                 </li>
                 <li className="FancyTabs-tablistItem">
                   <Tab id="t2" className="FancyTabs-tab">
-                    {demoTab.bind(
+                    {tabs.bind(
                       null,
                       <span className="FancyTabs-tabText">Population</span>
                     )}
@@ -97,7 +97,7 @@ class App extends Component {
                 </li>
                 <li className="FancyTabs-tablistItem">
                   <Tab id="t3" className="FancyTabs-tab">
-                    {demoTab.bind(
+                    {tabs.bind(
                       null,
                       <span className="FancyTabs-tabText">Variant Type</span>
                     )}
@@ -105,7 +105,7 @@ class App extends Component {
                 </li>
                 <li className="FancyTabs-tablistItem">
                   <Tab id="t4" className="FancyTabs-tab">
-                    {demoTab.bind(
+                    {tabs.bind(
                       null,
                       <span className="FancyTabs-tabText">
                         Case/Segregation
@@ -115,7 +115,7 @@ class App extends Component {
                 </li>
                 <li className="FancyTabs-tablistItem">
                   <Tab id="t5" className="FancyTabs-tab">
-                    {demoTab.bind(
+                    {tabs.bind(
                       null,
                       <span className="FancyTabs-tabText">Gene-centric</span>
                     )}
@@ -168,7 +168,7 @@ class App extends Component {
 
 export default App;
 
-function demoTab(content, tabState) {
+function tabs(content, tabState) {
   let cl = "FancyTabs-tabInner";
   if (tabState.isActive) cl += " is-active";
   return <div className={cl}>{content}</div>;
