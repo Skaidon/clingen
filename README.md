@@ -30,4 +30,4 @@ The React Devtools will open.
 
 ### `npm run start`
 
-Same as above, but with out the React Devtools opening.
+Same as above, but without the React Devtools opening.
