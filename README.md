@@ -10,6 +10,9 @@
     - Chosen because it allowed me to style everythign quickly.
   - `react-css-grid` for the multi column layouts.
     - Chosen because I haven't had an opportunity to use CSS Grid yet.
+  - `rfs` for responsive font sizes.
+  - Wanted to try this out. It only really effects large fonts, so I bumped up the font of the main `h1` on the page to show this working.
+    - The font starts off as `2.5rem` and as you shrink the browser window horizontally, the font-size gets altered by media queries.
 
 ## Inspiration:
 
