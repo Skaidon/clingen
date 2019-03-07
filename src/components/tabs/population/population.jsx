@@ -11,10 +11,10 @@ export default function PopulationTab() {
         <Collapsible trigger={populationTabCriteria.title}>
           <div className="panel panel-info evalation-form-item">
             <div className="panel-heading">
-              <strong className="criteria-definition">BA1</strong>:
-              <span>
-                Allele frequency is &gt; 5% in ExAC, 1000 Genomes, or ESP
-              </span>
+              <strong className="criteria-definition">
+                {populationTabCriteria.definition}
+              </strong>
+              : <span>{populationTabCriteria.subtitle}</span>
             </div>
             <div className="panel-body">
               <div className="flexbox-container">
@@ -29,7 +29,9 @@ export default function PopulationTab() {
                   </select>
                 </div>
                 <div className="col">
-                  <label htmlFor="BA1-explanation">Explanation:</label>
+                  <label htmlFor="BA1-explanation">
+                    {populationTabCriteria.label}
+                  </label>
                   <textarea
                     className="form-control"
                     id="BA1-explanation"
