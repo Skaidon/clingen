@@ -39,3 +39,4 @@ Same as above, but without the React Devtools opening.
 
 - Not all tabs have real content.
   - I stopped when I ran out of new UI patterns to recreate.
+- No modals
