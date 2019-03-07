@@ -38,6 +38,10 @@
 - UI Framework
   - I didn't use a popular React UI framework for this as my intent was to get comfortable with latest React and not rely on one package to solve all the problems.
   - For a production project, I would take more time looking at various frameworks to see if any would suit the needs of the app rather than pick packages for each individual feature like I've done here.
+- Responsive UI Patterns
+  - I made the UI semi-responsive. In that the UI should be readable on most devices. But is far from perfect.
+    - I would look at alternate patterns for the tabs, as an example. Maybe converting it to an accordian on mobile, tabs on desktop.
+      - Time didn't allow for that kind of feature.
 
 ## Available Scripts
 
