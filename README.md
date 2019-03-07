@@ -11,7 +11,7 @@
   - `react-css-grid` for the multi column layouts.
     - Chosen because I haven't had an opportunity to use CSS Grid yet.
   - `rfs` for responsive font sizes.
-  - Wanted to try this out. It only really effects large fonts, so I bumped up the font of the main `h1` on the page to show this working.
+    - Wanted to try this out. It only really effects large fonts, so I bumped up the font of the main `h1` on the page to show this working.
     - The font starts off as `2.5rem` and as you shrink the browser window horizontally, the font-size gets altered by media queries.
 
 ## Inspiration:
@@ -34,3 +34,8 @@ The React Devtools will open.
 ### `npm run start`
 
 Same as above, but without the React Devtools opening.
+
+## Known Issues
+
+- Not all tabs have real content.
+  - I stopped when I ran out of new UI patterns to recreate.
