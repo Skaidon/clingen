@@ -1,3 +1,5 @@
+@import "~rfs/scss";
+
 .callout {
   background: #fff;
   border: 1px solid #eee;
@@ -12,7 +14,7 @@
   text-align: left;
   > h4 {
     color: #1b809e;
-    font-size: 1.25rem;
+    @include font-size(1.25rem);
     margin-top: 0;
     margin-bottom: 5px;
   }
@@ -57,7 +59,7 @@
   .panel-title {
     margin-top: 0;
     margin-bottom: 0;
-    font-size: 16px;
+    @include font-size(16px);
     color: inherit;
   }
 }
