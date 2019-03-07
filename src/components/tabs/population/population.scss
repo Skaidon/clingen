@@ -16,6 +16,27 @@
     &:hover {
       background-color: #293894;
     }
+    &:after {
+      border: solid #fff;
+      border-width: 0 3px 3px 0;
+      content: "";
+      display: inline-block;
+      left: 10px;
+      padding: 3px;
+      position: relative;
+    }
+    &.is-closed {
+      &:after {
+        top: -2px;
+        transform: rotate(45deg);
+      }
+    }
+    &.is-open {
+      &:after {
+        top: 2px;
+        transform: rotate(-135deg);
+      }
+    }
   }
 }
 
