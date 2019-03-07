@@ -3,7 +3,7 @@
 - Play with newer React concepts like Context.
   - Hooks doesn't make sense for this experiment.
   - Context is used throughout, regardless. For a production app, this would be handled differently through props or using something like Redux coupled with Context where appropriate.
-- Play with various UI React components that Ihaven't had a chance to utilize during my full-time job.
+- Play with various UI React components that I haven't had a chance to utilize during my full-time job.
   - `react-aria-tabpanel` for the tabs.
     - Chosen for it's accessibility features.
       - Select a tab, use you left/right arrow keys to switch tabs.
@@ -23,7 +23,7 @@
 
 - Not all tabs have real content.
   - I stopped when I ran out of new UI patterns to recreate.
-- Popover doesn't handle hover events too well.
+- Popover doesn't handle adjacent hover events too well.
   - If I was working on this for a real app, I would either resolve this issue or replace the package being used with another or one of my own creation.
 - No modals
 - No real functionality beyond displaying data.
