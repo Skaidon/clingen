@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "6fca04cff984c0d0e36a",
-    "url": "/clingen/static/css/main.41c45e49.chunk.css"
+    "revision": "ba1dbf1225b4f6b9ed32",
+    "url": "/clingen/static/css/main.90732755.chunk.css"
   },
   {
-    "revision": "6fca04cff984c0d0e36a",
-    "url": "/clingen/static/js/main.6fca04cf.chunk.js"
+    "revision": "ba1dbf1225b4f6b9ed32",
+    "url": "/clingen/static/js/main.ba1dbf12.chunk.js"
   },
   {
     "revision": "d356205d2dfae98f786e",
@@ -20,7 +20,7 @@ self.__precacheManifest = [
     "url": "/clingen/static/js/2.cbf16cc7.chunk.js"
   },
   {
-    "revision": "e88fb9d6440947483ca6ee52f1d8a87d",
+    "revision": "2bfe2a1356559c927a7cbcb454db2b32",
     "url": "/clingen/index.html"
   }
 ];
