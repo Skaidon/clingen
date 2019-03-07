@@ -23,6 +23,8 @@
 
 - Not all tabs have real content.
   - I stopped when I ran out of new UI patterns to recreate.
+- Popover doesn't handle hover events too well.
+  - If I was working on this for a real app, I would either resolve this issue or replace the package being used with another or one of my own creation.
 - No modals
 - No real functionality beyond displaying data.
   - In the console log, I logged one API call and also added that to State. But it is never referenced due to me not knowing where the UI data actually resides.
