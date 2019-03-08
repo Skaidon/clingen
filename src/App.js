@@ -15,6 +15,7 @@ import ProgressBar from "./components/tabs/progress-bar/progressBar";
 import BasicInfoTab from "./components/tabs/basic-information/basicInfo";
 import PopulationTab from "./components/tabs/population/population";
 import BasicHeader from "./components/basicHeader/basicHeader";
+import EditableHeader from "./components/editableHeader/editableHeader";
 // SASS:
 import "./App.scss";
 import "./scss/tabs.scss";
@@ -154,10 +155,7 @@ class App extends Component {
               </TabPanel>
               <TabPanel tabId="t5">
                 <div className="FancyTabs-panelInner">
-                  Duis irure dolor in reprehenderit in voluptate velit esse
-                  cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                  occaecat cupidatat non proident, sunt in culpa qui officia
-                  deserunt mollit anim id est laborum.
+                  <EditableHeader />
                 </div>
               </TabPanel>
             </div>
