@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import BasicHeader from "../basicHeader/basicHeader";
 
 export default class EditableHeader extends Component {
   constructor(props) {
@@ -6,19 +7,18 @@ export default class EditableHeader extends Component {
     this.state = {
       copy: ""
     };
-    this.commonChange = this.commonChange.bind(this);
   }
 
-  commonChange(event) {
+  commonChange = event => {
     this.setState({
       [event.target.name]: event.target.value
     });
-  }
+  };
   render() {
     return (
       <form>
         <input name="copy" onChange={this.commonChange} />
-        <h1>{this.state.copy}</h1>
+        <BasicHeader copy={this.state.copy} />
       </form>
     );
   }
