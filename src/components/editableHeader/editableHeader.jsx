@@ -14,11 +14,12 @@ export default class EditableHeader extends Component {
       [event.target.name]: event.target.value
     });
   };
+
   render() {
     return (
       <form>
-        <input name="copy" onChange={this.commonChange} />
         <BasicHeader copy={this.state.copy} />
+        <input name="copy" onChange={this.commonChange} />
       </form>
     );
   }
