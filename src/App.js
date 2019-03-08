@@ -14,6 +14,7 @@ import CurationCriteriaButtons from "./components/curation-criteria/curationCrit
 import ProgressBar from "./components/tabs/progress-bar/progressBar";
 import BasicInfoTab from "./components/tabs/basic-information/basicInfo";
 import PopulationTab from "./components/tabs/population/population";
+import BasicHeader from "./components/basicHeader/basicHeader";
 // SASS:
 import "./App.scss";
 import "./scss/tabs.scss";
@@ -136,6 +137,7 @@ class App extends Component {
               </TabPanel>
               <TabPanel tabId="t3">
                 <div className="FancyTabs-panelInner">
+                  <BasicHeader copy="This is a header" align="left" />
                   Duis irure dolor in reprehenderit in voluptate velit esse
                   cillum dolore eu fugiat nulla pariatur. Excepteur sint
                   occaecat cupidatat non proident, sunt in culpa qui officia
